@@ -6,7 +6,7 @@ import classes from "./MealsList.module.css";
 
 const MealsList = (props) => {
   const meals = DUMMY_MEALS.map((meal) => (
-    <MealItem key={meal.id} meal={meal} />
+    <MealItem id={meal.id} key={meal.id} meal={meal} />
   ));
   return (
     <section className={classes.meals}>
